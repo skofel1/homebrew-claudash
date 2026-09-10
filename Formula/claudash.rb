@@ -5,21 +5,21 @@
 class Claudash < Formula
   desc "TUI dashboard for Claude Code — k9s-style sessions viewer"
   homepage "https://github.com/skofel1/claudash"
-  version "1.9.0"
+  version "1.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.9.0/claudash_1.9.0_darwin_amd64.tar.gz"
-      sha256 "6c366551a172c9134047f64b1ce0aaf720717b549c68ac9905f1fbbc4dceb930"
+      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.10.0/claudash_1.10.0_darwin_amd64.tar.gz"
+      sha256 "9614584c62fd79f2ce46e588d90b2e8d94c92095af0a658bc86288e4c23956e4"
 
       define_method(:install) do
         bin.install "claudash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.9.0/claudash_1.9.0_darwin_arm64.tar.gz"
-      sha256 "0dab1269ae32c928622306b158e36f1d4304e12068e3f156e13acb1a30ee7110"
+      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.10.0/claudash_1.10.0_darwin_arm64.tar.gz"
+      sha256 "2e927c9e87453c86f8b57f8f27fad1f94c6a83b8849a3795f59f2a184e00223c"
 
       define_method(:install) do
         bin.install "claudash"
@@ -29,15 +29,15 @@ class Claudash < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.9.0/claudash_1.9.0_linux_amd64.tar.gz"
-      sha256 "41b91dd97f4a40a01ea790797d785b8a5e90cb7ba1187f899f75120ec90c168e"
+      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.10.0/claudash_1.10.0_linux_amd64.tar.gz"
+      sha256 "be1a3957d7b78ae30a00c2accd7904112a9ece3138c954e1a64a11925d3eaeda"
       define_method(:install) do
         bin.install "claudash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.9.0/claudash_1.9.0_linux_arm64.tar.gz"
-      sha256 "74780484da3d232e6b1394f9a34fa806c2d5ee238b2d88929c4f584e55e9e4da"
+      url "https://github.com/skofel1/homebrew-claudash/releases/download/v1.10.0/claudash_1.10.0_linux_arm64.tar.gz"
+      sha256 "34238005f7b7e8b15d578e333afbdfbeefd84307bb8889b013e5510229efbbd9"
       define_method(:install) do
         bin.install "claudash"
       end
